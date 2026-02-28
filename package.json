@@ -1,0 +1,50 @@
+{
+  "name": "oauth-pkce-spa-example",
+  "version": "1.0.0",
+  "description": "OAuth 2.0 Authorization Code Flow with PKCE for Single Page Applications — React + TypeScript. Works with Keycloak, ForgeRock AM, Okta, Auth0.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "typescript": "^5.2.0",
+    "vite": "^5.0.0",
+    "vitest": "^1.0.0",
+    "@vitest/ui": "^1.0.0",
+    "jsdom": "^23.0.0"
+  },
+  "keywords": [
+    "oauth2",
+    "pkce",
+    "oauth-pkce",
+    "spa",
+    "react",
+    "keycloak",
+    "forgerock",
+    "oidc",
+    "authorization-code-flow",
+    "iam",
+    "identity",
+    "authentication"
+  ],
+  "author": "IAMDevBox <https://iamdevbox.com>",
+  "license": "MIT",
+  "homepage": "https://iamdevbox.com/posts/how-to-implement-authorization-code-flow-with-pkce-in-a-single-page-application-spa/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IAMDevBox/oauth-pkce-spa-example"
+  }
+}
