@@ -6,7 +6,7 @@
 [![RFC 7636](https://img.shields.io/badge/RFC-7636%20PKCE-green.svg)](https://www.rfc-editor.org/rfc/rfc7636)
 [![OAuth 2.0](https://img.shields.io/badge/OAuth-2.0-orange.svg)](https://oauth.net/2/)
 
-A companion repository for the tutorial: **[How to Implement Authorization Code Flow with PKCE in a Single Page Application](https://iamdevbox.com/posts/how-to-implement-authorization-code-flow-with-pkce-in-a-single-page-application-spa/)** on [iamdevbox.com](https://iamdevbox.com).
+A companion repository for the tutorial: **[How to Implement Authorization Code Flow with PKCE in a Single Page Application](https://iamdevbox.com/posts/how-to-implement-authorization-code-flow-with-pkce-in-a-single-page-application-spa/?utm_source=github&utm_medium=companion-repo&utm_campaign=oauth-pkce-spa-example)** on [iamdevbox.com](https://iamdevbox.com/?utm_source=github&utm_medium=companion-repo&utm_campaign=oauth-pkce-spa-example).
 
 ---
 
@@ -106,7 +106,7 @@ VITE_TOKEN_ENDPOINT=http://localhost:8080/realms/myrealm/protocol/openid-connect
 VITE_END_SESSION_ENDPOINT=http://localhost:8080/realms/myrealm/protocol/openid-connect/logout
 ```
 
-For a full Spring Boot + Keycloak resource server example, see: **[Keycloak Spring Boot OAuth2 Integration](https://iamdevbox.com/posts/keycloak-spring-boot-oauth2-integration-complete-guide/)**
+For a full Spring Boot + Keycloak resource server example, see: **[Keycloak Spring Boot OAuth2 Integration](https://iamdevbox.com/posts/keycloak-spring-boot-oauth2-integration-complete-guide/?utm_source=github&utm_medium=companion-repo&utm_campaign=oauth-pkce-spa-example)**
 
 ### ForgeRock AM Setup
 
@@ -184,7 +184,7 @@ const isValid = await verifyTestVector(); // Must be true
 | `invalid_client: redirect_uri_mismatch` | Registered URI doesn't match exactly | Use exact same URI including trailing slash. Use `window.location.origin + '/callback'` |
 | `Code verifier not found` | sessionStorage cleared (page refresh mid-flow) | Store verifier in sessionStorage before redirect; handle refresh with BFF pattern |
 
-Full error reference: **[PKCE Implementation Errors — 100+ Debugged](https://iamdevbox.com/posts/how-to-implement-authorization-code-flow-with-pkce-in-a-single-page-application-spa/#common-pkce-implementation-errors-ive-debugged-100-times)**
+Full error reference: **[PKCE Implementation Errors — 100+ Debugged](https://iamdevbox.com/posts/how-to-implement-authorization-code-flow-with-pkce-in-a-single-page-application-spa/?utm_source=github&utm_medium=companion-repo&utm_campaign=oauth-pkce-spa-example#common-pkce-implementation-errors-ive-debugged-100-times)**
 
 ---
 
@@ -211,18 +211,18 @@ Tests validate:
 - **State validation**: checked before processing the authorization code (CSRF protection)
 - **URL cleanup**: `code` and `state` removed from browser history after exchange
 
-For production deployment security considerations, see: **[OAuth 2.1 Security Best Practices](https://iamdevbox.com/posts/oauth-21-security-best-practices-mandatory-pkce-and-token-binding/)**
+For production deployment security considerations, see: **[OAuth 2.1 Security Best Practices](https://iamdevbox.com/posts/oauth-21-security-best-practices-mandatory-pkce-and-token-binding/?utm_source=github&utm_medium=companion-repo&utm_campaign=oauth-pkce-spa-example)**
 
 ---
 
 ## Related Resources
 
-- 📖 **[Full Tutorial: PKCE in SPAs](https://iamdevbox.com/posts/how-to-implement-authorization-code-flow-with-pkce-in-a-single-page-application-spa/)** — step-by-step implementation guide with React hooks
-- 🔑 **[OAuth 2.0 Complete Developer Guide](https://iamdevbox.com/posts/oauth-20-complete-developer-guide-authorization-authentication/)** — full OAuth 2.0 reference covering all grant types
-- 🌐 **[OAuth 2.0 Authorization Flow in Node.js](https://iamdevbox.com/posts/oauth-20-authorization-flow-using-nodejs-and-express/)** — server-side Authorization Code Flow with Express
-- 🔒 **[OAuth 2.1 Security Best Practices](https://iamdevbox.com/posts/oauth-21-security-best-practices-mandatory-pkce-and-token-binding/)** — mandatory PKCE, token binding, and DPoP
-- 🛠️ **[JWT Decoder Tool](https://iamdevbox.com/tools/jwt-decode/)** — decode and inspect JWT access tokens in your browser
-- 🔧 **[PKCE Generator Tool](https://iamdevbox.com/tools/pkce-generator/)** — generate code verifier and challenge pairs interactively
+- 📖 **[Full Tutorial: PKCE in SPAs](https://iamdevbox.com/posts/how-to-implement-authorization-code-flow-with-pkce-in-a-single-page-application-spa/?utm_source=github&utm_medium=companion-repo&utm_campaign=oauth-pkce-spa-example)** — step-by-step implementation guide with React hooks
+- 🔑 **[OAuth 2.0 Complete Developer Guide](https://iamdevbox.com/posts/oauth-20-complete-developer-guide-authorization-authentication/?utm_source=github&utm_medium=companion-repo&utm_campaign=oauth-pkce-spa-example)** — full OAuth 2.0 reference covering all grant types
+- 🌐 **[OAuth 2.0 Authorization Flow in Node.js](https://iamdevbox.com/posts/oauth-20-authorization-flow-using-nodejs-and-express/?utm_source=github&utm_medium=companion-repo&utm_campaign=oauth-pkce-spa-example)** — server-side Authorization Code Flow with Express
+- 🔒 **[OAuth 2.1 Security Best Practices](https://iamdevbox.com/posts/oauth-21-security-best-practices-mandatory-pkce-and-token-binding/?utm_source=github&utm_medium=companion-repo&utm_campaign=oauth-pkce-spa-example)** — mandatory PKCE, token binding, and DPoP
+- 🛠️ **[JWT Decoder Tool](https://iamdevbox.com/tools/jwt-decode/?utm_source=github&utm_medium=companion-repo&utm_campaign=oauth-pkce-spa-example)** — decode and inspect JWT access tokens in your browser
+- 🔧 **[PKCE Generator Tool](https://iamdevbox.com/tools/pkce-generator/?utm_source=github&utm_medium=companion-repo&utm_campaign=oauth-pkce-spa-example)** — generate code verifier and challenge pairs interactively
 
 ---
 
@@ -237,4 +237,4 @@ For production deployment security considerations, see: **[OAuth 2.1 Security Be
 
 ## License
 
-MIT © [IAMDevBox](https://iamdevbox.com) — IAM tutorials and tools for developers.
+MIT © [IAMDevBox](https://iamdevbox.com/?utm_source=github&utm_medium=companion-repo&utm_campaign=oauth-pkce-spa-example) — IAM tutorials and tools for developers.
